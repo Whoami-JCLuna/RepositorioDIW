@@ -22,7 +22,7 @@ body{
     display: grid;
 
    /* COLUMNS  */
-    /* grid-template-columns: 200px 2cm 30%; */
+    /* grid-template-columns: 100px 2cm 30%; */
 
      /* repeat:  parámetros : cantidad de columnas y el tamanio */
     /* grid-template-columns:repeat(6,1fr); */
@@ -89,11 +89,15 @@ body{
     
 }    
 
+
+
+
+
 .grid__item{
     color: #fff;
     font-size: 3rem;  /*el height es auto, depende del font-size */
     text-align: center;
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
     background: crimson;
 }
 
@@ -103,8 +107,10 @@ body{
         /* Posicionamiento por líneas */
     /* grid-column-start: 3; */
     /* grid-column-end: 5; */
-    /* grid-row-start: 3; */
-    /* grid-row-end: 5;  */
+    grid-row-start: 3;
+    grid-row-end: 5; 
+
+
 
     /* ShortHand de grid-column-start / end  */
 
