@@ -1,0 +1,138 @@
+
+@font-face {
+  font-family: 'Cursiva'; 
+  src: url('./assets/fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Normal'; 
+  src: url('./assets/fonts/DMSans-VariableFont_opsz\,wght.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.text-normal{
+  font-family: Normal,sans-serif;
+}
+.small-text{
+  font-family: Normal,sans-serif;
+  font-size: 14px;
+  color: white;
+}
+
+
+span{
+  font-family: Cursiva,sans-serif;
+  color: #7551DC;
+}
+.spanYellow{
+  font-family: Cursiva,sans-serif;
+  color: #FFC967;
+
+}
+
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: grid;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+    background-color: #F5F5F5;
+  }
+  body .grid-container div{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.075); /* Sombra difusa */
+    border-radius: 8px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(4, auto); 
+    gap: 30px; 
+    padding: 20px;
+  }
+  
+  /* Estilo para cada área */
+  .create-schedule {
+    height: 370px;
+    background-color: #FAEEE2;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Normal,sans-serif;
+    font-size: 2.5em;
+    line-height: 1;
+    font-weight: 550;
+  }
+  .create-schedule img{
+    margin: 20px;
+    width: 4em;
+  }
+  
+  .social-media {
+    height: 296px;
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #7551DC;
+    font-size: 3em;
+    color: white;
+    font-weight: 700;
+  }
+  
+  .schedule-media {
+    height: 538px;
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+    background-color: #DCD0FC;
+  }
+  
+  .write-content {
+    height: 390px;
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    margin-top: 72px;
+    background-color: #FFCA68;
+  }
+  
+  .manage-accounts {
+    height: 220px;    
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: #ffffff;
+  }
+  
+  .growth-stats {
+    height: 220px;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    background-color: #ffffff;
+  }
+  
+  .posting-schedule {
+    height: 220px;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    background-color: #FFCB68;
+  }
+  
+  .follower-growth {
+    height: 220px;
+    grid-column: 3 / 5;
+    grid-row: 3 / 4;
+    background-color: #7551DC;
+  }
+  
